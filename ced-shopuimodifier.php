@@ -15,7 +15,8 @@
  * @wordpress-plugin
  * Plugin Name:       ced-shopUIModifier
  * Plugin URI:        https://cedcommerce.com/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       This Plugin Does Changes to show Sold OUT Badges  When Stock not Available,Change Title 
+ * 					   of Single Product Page, Change Checkout field Label  
  * Version:           1.0.0
  * Author:            Rajiv Ranjan Shrivastav
  * Author URI:        https://cedcoss.com/
