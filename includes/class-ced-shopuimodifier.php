@@ -158,13 +158,12 @@ class Ced_Shopuimodifier {
 	private function define_public_hooks() {
 
 		$plugin_public = new Ced_Shopuimodifier_Public($this->get_plugin_name(), $this->get_version());
-
 		$this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_styles');
 		$this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_scripts');
 		//For Showing Sold OUT Badges On Shop Page
 		$this->loader->add_filter('woocommerce_sale_flash', $plugin_public, 'ced_addSoldOutBadge');
 		//For Showing Sold OUT Badges On Single Product Page
-		$this->loader->add_action('woocommerce_before_single_product', $plugin_public, 'ced_addSoldOutBadge');
+		// $this->loader->add_filter('woocommerce_sale_flash', $plugin_public, 'ced_addSoldOutBadge');
 		//Modify Fields Label on checkout Page
 		$this->loader->add_filter('woocommerce_checkout_fields', $plugin_public, 'ced_modify_checkoutField');
 		//Overridding title.php  of Core Woocommerce 
